@@ -1,7 +1,38 @@
-#kitty{
-    width: 100px;
-    height: 100px;
-    position: relative;
-    top: 0;
-    left: 0;
+.body {
+    margin:0;
+    padding: 0;
+}
+
+/*Here I am selecting the class container
+and will be adding grid to it*/
+.container {
+    display: grid;
+    grid-template-areas:
+    'intro intro'
+    'cities attractions'
+    'images images';
+}
+
+.intro {
+    grid-area: intro;
+}
+
+.cities {
+    grid-area: cities;
+}
+
+.attractions {
+    grid-area: attractions;
+}
+
+.images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    grid-area: images;
+}
+
+img {
+    width: auto;
+    height: 450px;
 }
